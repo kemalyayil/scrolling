@@ -1,0 +1,25 @@
+Github hakkinda
+
+ilk defa push ediliyorsa,
+            git init
+            git add .
+            git commit -m "yorum"
+            git branch -M main
+            git remote add origin https://github.com/kemalyayil/Cucumber4_Benim.git
+            git push -u origin main
+
+sonraki  seferlerde;
+            git add .
+            git commit -m "yorum"
+            git push
+
+
+
+Pull ederken(branch ler ile birlikte calistigimiz zaman);
+git.checkout Master     ==> kendi branch imizden master branch e aliyoruz
+
+git fetch
+git merge
+git pull
+git merge master
+git.checkout kemal      ==> en sonunda yine kendi branch imize geciriyoruz
