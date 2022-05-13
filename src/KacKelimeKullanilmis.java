@@ -4,7 +4,7 @@ public class KacKelimeKullanilmis {
     public static void main(String[] args) {
         String metin = "Hamza Yilmaz ile Ahmet Yilmaz babalari Huseyin Yilmaz ile bulustu.";
         // hamza = 2, yilmaz = 1 , bugun = 2 , vs...
-        String[] parcala = metin.split(" ");
+        String[] parcala = metin.split(" ");   // burda bosluk olmasaydi, bos karakter ve harflerin kac adet kullanildinigi gorecektik
 
         HashMap<String, Integer> kelimeler = new HashMap<>();
 

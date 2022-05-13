@@ -10,12 +10,11 @@ import org.testng.annotations.*;
 
 public class appointment {
 
-    @Test(invocationCount=100)
+    @Test(invocationCount=5)
     public void Test(){
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\zeynep\\Desktop\\Drivers\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
-
         driver.get("https://www.vfsvisaonline.com/Netherlands-Global-Online-Appointment_Zone3/AppScheduling/AppWelcome.aspx?P=wClNiU4hmfBtBSfTMP3wVgWTA8%2bQhVYKJGe%2fACjrucI%3d");
 
         WebElement makeAnAppointment = driver.findElement(By.id("plhMain_lnkSchApp"));
