@@ -8,11 +8,11 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class appointment_fatma_hanim {
+public class appointment_ankara {
 
     @Test()
     public void Test(){
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0; i < 3; i++) {
             System.setProperty("webdriver.chrome.driver", "C:\\Users\\zeynep\\Desktop\\Drivers\\chromedriver.exe");
             WebDriver driver = new ChromeDriver();
             driver.manage().window().maximize();
@@ -29,7 +29,7 @@ public class appointment_fatma_hanim {
 
             WebElement numberOfTheApplicants = driver.findElement(By.id("plhMain_tbxNumOfApplicants"));
             numberOfTheApplicants.clear();
-            numberOfTheApplicants.sendKeys("4");
+            numberOfTheApplicants.sendKeys("3");
 
             Select selectVisaType = new Select(driver.findElement(By.id("plhMain_cboVisaCategory")));
             selectVisaType.selectByValue("906");
