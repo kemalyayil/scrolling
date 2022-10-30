@@ -8,11 +8,13 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class appointment_ankara {
+import java.util.Scanner;
+
+public class appointment_istanbul {
 
     @Test()
     public void Test(){
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 3; i++) {
             System.setProperty("webdriver.chrome.driver", "C:\\Users\\zeynep\\Desktop\\Drivers\\chromedriver.exe");
             WebDriver driver = new ChromeDriver();
             driver.manage().window().maximize();
@@ -21,21 +23,37 @@ public class appointment_ankara {
             WebElement makeAnAppointment = driver.findElement(By.id("plhMain_lnkSchApp"));
             makeAnAppointment.click();
 
-            Select selectEmbassyAnkara = new Select(driver.findElement(By.id("plhMain_cboVAC")));
-            selectEmbassyAnkara.selectByValue("92");
+            Select selectEmbassyIstanbul = new Select(driver.findElement(By.id("plhMain_cboVAC")));
+            selectEmbassyIstanbul.selectByValue("93");
 
             WebElement submitButton = driver.findElement(By.id("plhMain_btnSubmit"));
             submitButton.click();
 
             WebElement numberOfTheApplicants = driver.findElement(By.id("plhMain_tbxNumOfApplicants"));
             numberOfTheApplicants.clear();
-            numberOfTheApplicants.sendKeys("3");
+            numberOfTheApplicants.sendKeys("4");
 
             Select selectVisaType = new Select(driver.findElement(By.id("plhMain_cboVisaCategory")));
-            selectVisaType.selectByValue("906");
+            selectVisaType.selectByValue("8");
 
             WebElement continueButton = driver.findElement(By.id("plhMain_btnSubmit"));
             continueButton.click();
+
+//            Select unvanSec = new Select(driver.findElement(By.id("plhMain_repAppVisaDetails_cboTitle_0")));
+//            unvanSec.selectByValue("MR.");
+//            WebElement givenName = driver.findElement(By.id("plhMain_repAppVisaDetails_tbxFName_0"));
+//            givenName.sendKeys("hakki");
+//            WebElement surname= driver.findElement(By.id("plhMain_repAppVisaDetails_tbxLName_0"));
+//            surname.sendKeys("karadayi");
+//            WebElement phoneNumber= driver.findElement(By.id("plhMain_repAppVisaDetails_tbxContactNumber_0"));
+//            phoneNumber.sendKeys("905051234568");
+//            WebElement emailAdress = driver.findElement(By.id("plhMain_repAppVisaDetails_tbxEmailAddress_0"));
+//            emailAdress.sendKeys("aa@gmail.com");
+//            Select plsSelectConfirm = new Select(driver.findElement(By.id("plhMain_cboConfirmation")));
+//            plsSelectConfirm.selectByValue("1");
+//            WebElement submit = driver.findElement(By.id("plhMain_btnSubmit"));
+//            submit.click();
+
 
             String messageOriginal = driver.findElement(By.id("plhMain_lblMsg")).getText();
             String currentMessage = "No date(s) available for appointment.";

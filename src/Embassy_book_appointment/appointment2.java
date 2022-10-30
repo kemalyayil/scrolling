@@ -12,7 +12,7 @@ public class appointment2 {
 
     @Test()
     public void Test(){
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0; i < 3; i++) {
             System.setProperty("webdriver.chrome.driver", "C:\\Users\\zeynep\\Desktop\\Drivers\\chromedriver.exe");
             WebDriver driver = new ChromeDriver();
             driver.manage().window().maximize();
