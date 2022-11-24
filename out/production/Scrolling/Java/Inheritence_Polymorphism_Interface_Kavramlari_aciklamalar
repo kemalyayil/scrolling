@@ -1,0 +1,99 @@
+                    Java - Inheritence, Polymorphism ve Interface Kavramları
+                                        Inheritance
+Kelime anlamı mirastır. Özellikleri yeni oluşturulmuş farklı sınıflar tarafından kullanılabilen
+bir sınıf gibi düşünebilirsiniz. Inheritance kavramını net olarak anlayabilmek için bir örnek
+algoritma oluşturalım ve kodlayalım:
+
+- Elimizde bir "çalışan" programı olsun. Programda 2 farklı çalışan grubumuzun olduğunu düşünelim:
+  Patron, Calisan
+
+- Patron Sınıfı:
+Bu sınıfı temsil eden bir ismin sınıf içerisinde belirlenmesi gerekir: pozisyon
+Sınıftaki üyelerin yıllık kaç gün izinli olduğu bilinmeli: izingunu
+Sınıftaki üyelerin aldıkları bir maaş olmalı: maas
+Görevli olduğu bölüm        : bolum
+
+- Calisan Sınıfı:
+
+Patron sınıfına benzer olan bir pozisyonları olmalı: pozisyon
+İzin gün sayıları bilinmeli : izingunu
+Bir maaşları olmalı         : maas
+Görevli olduğu bölüm        : bolum
+
+Bu temelleri incelediğimizde birbiri ile aynı olan 2 sınıf fakat birbirlerinden farklı sonuçlar üretmeliler.
+Yani Calisan sınıfının maaşı ile Patron sınıfının maaşı aynı olamaz. Dolayısıyla her iki sınıfa
+aynı özellikleri atamak yerine şöyle bir yol izleyebiliriz:
+
+Patron.java
+public class Patron {
+	String pozisyon;
+	int izinGunu;
+	double maas;
+	String bolum;
+
+	Patron() {
+		pozisyon = "Patron";
+		izinGunu = 60;
+		maas = 4000;
+		bolum = "Sosyal Medya Sorumlusu";
+	}
+
+	Patron(int i, double m){
+		pozisyon = "Patron";
+		izinGunu = i;
+		maas = m;
+		bolum = "Sosyal Medya Sorumlusu";
+	}
+}
+
+Calisan.java
+public class Calisan extends Patron {
+	Calisan(int i, double m){
+		pozisyon = "Calisan";
+		izinGunu = i;
+		maas = m;
+		bolum = super.bolum;
+	}
+}
+
+Genel.java
+public class Genel {
+	public static void main(String[] args) {
+		Calisan c = new Calisan(60, 1000);
+		Patron p = new Patron(80, 4500);
+
+		System.out.println(c.maas);
+		System.out.println(p.bolum);
+	}
+}
+
+Çıktı
+1000.0
+Sosyal Medya Sorumlusu
+
+Yukarıdaki örnekte Calisan.java içerisinde bolum için super adında bir değer kullandık.
+Bu bağlı olduğumuz ana class içerisinden bir veri çekmemize yardımcı olmaktadır.
+
+                                        Polymorphism
+Inheritance mantığı çerçevesinde var olan bir metot, alt sınıflardan birinde yeniden oluşturulmak
+istendiğinde override ifadesi kullanılmalıdır. Bu durum polymorphism, yani çok biçimlilik olarak geçer.
+Adından da anlaşılacağı üzere birden fazla aynı isimli metot üretmeye yarar.
+
+                                        Interfaces
+Bir sınıf içerisinde kullanılan metotların bir listesi diyebiliriz. Listede metot içerikleri değil,
+yalnızca metot isimlerine yer verilir. Kodlar arasındaki bağlantıları sağlayan interface, temelde
+Java programlama dilinde koddaki bağlantıların başlangıçta yapılmasına olanak verir.
+
+public interface Sekiller {
+    public double alan();
+    public double cevre();
+    public double hacim();
+    }
+
+şeklinde oluşturulurlar.
+
+Bir sınıf içerisinde dahil edilirken implements ön eki kullanılır:
+
+    public class Kare implements Sekiller {
+    ...
+    }

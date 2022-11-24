@@ -8,6 +8,10 @@ public class aliAbi {
         System.out.println(myStr.charAt(0));
         System.out.println(myStr.charAt(myStrLength-1));
 
+        String t = "dombili";
+        String tx = t + t;
+        System.out.println("tx = " + tx);
+
 
     }
 }

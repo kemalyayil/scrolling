@@ -1,0 +1,47 @@
+                                            Java - Sets (Kümeler)
+                                            Küme Nedir?
+Küme, matematikten de bildiğimiz hali ile içerisinde aynı olan elemanlardan yalnızca 1
+tane barındıran nesne topluluğudur. Java programlama dilinde de aynı mantık ile yola çıkılarak
+hazırlanmış olan kümeler, tek bir eleman içeren yapılardır.
+
+
+
+                                            Küme Türleri
+HashSet
+Elemanlar karışık bir şekilde eklenmiştir.
+
+TreeSet
+Elemanlar sıralı bir şekilde eklenmiştir.
+
+
+                                            Küme Oluşturmak
+Set kume = new HashSet();
+Set kume = new TreeSet();
+
+                                            Set Metotları
+
+add(değer) : Kümeye yeni bir değer ekler. (Eğer aynı eleman daha önce kümede bulunuyorsa eklenmez.)
+
+addAll(küme) : Farklı bir kümede bulunan tüm elemanları ana kümeye ekler.
+
+contains(değer) : Girilen değer kümede varsa TRUE, yoksa FALSE döndürür.
+
+containsAll(küme) : Parametre olarak gelen kümedeki tüm elemanlar ana kümede varsa TRUE döndürür.
+
+equals(küme) : Parametre olarak gelen küme ile ana küme aynı elemanlara sahip ise TRUE, değilse FALSE döndürür.
+
+remove(değer) : Girilen değer kümede varsa siler.
+
+removeAll(küme) : Parametre olarak gelen kümedeki tüm elemanları ana kümede bulur ve siler.
+
+retainAll(küme) : Parametre olarak gelen kümedeki elemanlar dışında kalan tüm elemanları siler.
+
+clear() : Kümenin tüm elemanlarını siler.
+
+size() : Kümenin eleman sayısını döndürür.
+
+isEmpty() : Eğer küme boş ise TRUE, elemanı var ise FALSE döndürür.
+
+toArray() : Kümeyi bir array'e dönüştürür.
+
+toString() : Kümenin elemanlarını "[5, 7, 12, 20]" şeklinde String olarak döndürür.

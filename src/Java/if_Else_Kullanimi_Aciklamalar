@@ -1,0 +1,50 @@
+                                    Java - If/Else Kullanımı
+
+    if(KOŞUL) {     // KOŞUL DOĞRU İSE
+    }
+    else {         // KOŞUL YANLIŞ İSE
+    }
+
+    gibi bir kullanımı vardır. Buna ek olarak eğer birden fazla durumu
+    değerlendirmemiz gerekiyorsa if/elseif/else şeklinde bir kullanımı da vardır;
+
+    if(KOŞUL 1) {       // KOŞUL 1 DOĞRU İSE
+    }
+    else if(KOŞUL 2) {  // KOŞUL 2 DOĞRU İSE
+    }
+    else if(KOŞUL 3) {  // KOŞUL 3 DOĞRU İSE
+    }
+    else {              // KOŞULLAR YANLIŞ İSE
+    }
+
+                                    Koşulda Kullanılabilen İfadeler
+    Eşitlik (==)
+    Koşul kısmında çift eşittir kullanılarak bir değişkenin bir değere eşit olduğu durumları ele alabiliriz.
+
+    Eşit Değildir (!=)
+    Koşul kısmında ünlem ve eşittir kullanılarak bir değişkenin bir değere eşit olmadığı durumları ele alabiliriz.
+
+    Küçüktür (<)
+    Koşul kısmında küçüktür işaretini kullanarak bir değerin bir başka değerden küçük olduğu durumları ele alabiliriz.
+
+    Büyüktür (>)
+    Koşul kısmında büyüktür işaretini kullanarak bir değerin bir başka değerden büyük olduğu durumları ele alabiliriz.
+
+    Küçük Eşittir (<=)
+    Koşul kısmında küçüktür ve eşittir kullanarak bir değerin bir başka değerden küçük ve eşit olduğu durumları ele alabiliriz.
+
+    Büyük Eşittir (>=)
+    Koşul kısmında büyüktür ve eşittir kullanarak bir değerin bir başka değerden büyük ve eşit olduğu durumları ele alabiliriz.
+
+                                    Mantıksal Operatörler
+    Ve - And (&&)
+    İki ifadeyi ve doğruluk tablosuna göre değerlendirir. Doğru ise çalıştırır.
+
+    Veya - Or (||)
+    İki ifadeyi veya doğruluk tablosuna göre değerlendirir. Doğru ise çalıştırır.
+
+    Özel Veya - Exclusive Or (^)
+    İki ifadeyi özel veya doğruluk tablosuna göre değerlendirir. Doğru ise çalıştırır.
+
+    Değil - Not (!)
+    Bir ifadenin True/False değerini ters döndürür.
