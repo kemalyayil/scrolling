@@ -1,0 +1,50 @@
+                                break-continue-deyimleri
+
+break continue deyimleri java içerisinde döngülerde (for loops vs)  oldukça fazla kullanım alanına sahiptir.
+
+break deyimi döngülerden ansızın çıkmanızı ve döngüyü istediğiniz durumlarda sonlandırmanızı sağlamaktadır.
+Örneğin, bir veritabanından tüm id değerlerini çektiniz ve id değerlerinden ilk 15 tanesini listeleyeceksiniz.
+Eğer elinizde 15’ten fazla kayıt varsa döngüyü bir şekilde sonlandırmanız gerekmektedir.
+bu örneği bir de kod ile anlatalım;
+
+public static void main(String[] args) {
+        int veritabaniKayitSayisi = 35;     // line 15 te 35 e gelmeden 5 te durdur komutu ekledik "break" ile
+
+        for(int i=1; i<veritabaniKayitSayisi; i++) {
+            System.out.println(i + ". kayit");
+            if(i == 5) {
+                break;
+            }
+
+            // konsol ciktisi  == >      1. kayit
+                                         2. kayit
+                                         3. kayit
+                                         4. kayit
+                                         5. kayit
+
+Yukarıdaki örnekte veritabanından gelen kayıt sayısını bir int tipinde değişkene elle atadık ve
+for döngüsüne sokarak kayıt sayılarını konsola yazdırdık. Kayıt sayısı 15’e eşit olduğunda break deyimi
+ile döngüden çıkmasını söyledik ve sonuç olarak konsol çıktımız aşağıdaki gibi oldu.
+
+
+
+                                        continue Komutu
+
+break deyiminden farklı olarak continue döngüyü sonlandırmamakta fakat döngüde ilgili tekrarı
+atlamaktadır (es geçmektedir). Örneğin bir veritabanından yine tüm kayıtları çektiniz ve bu kayıtlar
+arasından 5. kayıdı atlamak istiyor ve döngünün devam etmesini istiyorsunuz. Bu gibi durumlarda continue
+kullanılabilecek en güzel tercihtir. Şimdi bu örneği kod üzerinde gösterelim;
+
+
+public static void main(String[] args) {
+        int veritabaniKayitSayisi = 5;
+        for(int i =1; i<=veritabaniKayitSayisi; i++) {
+            if(i == 2) {                // 2 ise atla
+                continue;
+            }
+            System.out.println(i + ". kayit");
+        }
+        // konsol ciktisi  == >     1. kayit
+                                    3. kayit
+                                    4. kayit
+                                    5. kayit

@@ -1,0 +1,32 @@
+                                    Önemli Math Sınıfı Metotları
+Math.abs : Mutlak değer alır. (Math.abs(-10) : 10 çıktısını verir.)
+
+Math.ceil : Üste yuvarlar. (Math.ceil(10.2) : 11 çıktısı verir.)
+
+Math.floor : Aşağıya yuvarlar. (Math.floor(10.7) : 10 çıktısı verir.)
+
+Math.log10 : 10 tabanında logaritma işlemini yapar. (Math.log10(100) : 2 çıktısını verir.)
+
+Math.max : 2 değişkenden büyük olanını bulur. (Math.max(10, 8) : 10 çıktısını verir.)
+
+Math.min : 2 değişkenden küçük olanını bulur. (Math.min(10, 8) : 8 çıktısını verir.)
+
+Math.pow : 2 değer alır, pow(taban, üst) şeklinde kullanılır. (Math.pow(5,3) : 125 çıktısını verir.)
+
+Math.PI : PI sayısının 15. basamağı dahil olmak üzere çıktısını verir. (Math.PI() : 3.141592653589793)
+
+Math.random : double veri tipine sahip olarak algılar ve 0-1 arasında rastgele sayı üretir. (Math.random())
+
+Math.round : double veri tipine sahip değerleri en yakın sayıya yuvarlar. (Math.round(11.6) : 12 çıktısını verir.)
+
+Math.sqrt : Karekök işlemini yapar. (Math.sqrt(144) : 12 çıktısını verir.)
+
+Math.sin : sin değerini bulur. (Math.sin(90) : 0.8939966636005579 çıktısını verir.)
+
+Math.cos : cos değerini bulur. (Math.cos(45) : 0.5253219888177297 çıktısını verir.)
+
+Math.tan : tan değerini bulur. (Math.tan(180) : 1.3386902103511544 çıktısını verir.)
+
+Math.toDegrees : Radyanı dereceye çevirir. (Math.toDegrees(0.8727) : 50.002026781066945 çıktısını verir.)
+
+Math.toRadian : Dereceyi radyana çevirir. (Math.toRadians(50.002026781066945) : 0.8727000000000001 çıktısını verir.)

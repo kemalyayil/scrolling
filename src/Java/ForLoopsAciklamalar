@@ -1,0 +1,75 @@
+                            Farklı For Döngüsü Kullanımları
+            for (dongu_baslangic_degeri; dongu_kosulu; dongu_deger_degisimi) {
+             //kosula uygun kod blogu
+            }
+
+For Döngüsü ‘nün bir çok farklı kullanımı olabilir. Örneğin verileri sadece arttırarak yazmamız
+gerekmemektedir, veya döngüyü 0 (sıfır) dan başlatmak zorunda değilizdir. For Döngüsü nün bir kaç
+farklı kullanım örneğini vermek gerekirse;
+
+//standart kullanim
+        System.out.print("i: ");
+        for(int i = 0; i < 10 ; i++) {
+            System.out.print(i + " ");
+        }//Konsol ciktisi   ==>  i: 0 1 2 3 4 5 6 7 8 9
+
+
+        //azaltarak kullanım
+        System.out.print("\nj: ");
+        for(int j = 10; j >= 0 ; j--) {
+            System.out.print(j + " ");
+        }//Konsol ciktisi   ==>  j: 10 9 8 7 6 5 4 3 2 1 0
+
+
+        //5ten 10a kadar
+        System.out.print("\nk: ");
+        for(int k = 5; k <= 10; k++) {
+            System.out.print(k + " ");
+        }//Konsol ciktisi   ==>  k: 5 6 7 8 9 10
+
+
+        //0dan 100 e 10ar 10ar
+        System.out.print("\nl: ");
+        for(int l = 0 ; l <= 100; l+=10) {
+            System.out.print(l + " ");
+        }//Konsol ciktisi   ==>  l: 0 10 20 30 40 50 60 70 80 90 100
+
+
+        //50den 0a 5er 5er
+        System.out.print("\nm: ");
+        for(int m = 50; m >= 0; m-=5) {
+            System.out.print(m + " ");
+        }//Konsol ciktisi   ==>  m: 50 45 40 35 30 25 20 15 10 5 0
+
+
+                               Nested Loop (İçiçe Döngüler)
+
+//nested loop
+        for(int i = 0; i<10; i++) {
+            System.out.println("i: " + i);
+            for(int j=10; j>0; j--) {
+                System.out.println("i: " + i + " j: " + j);
+            }
+        }//Konsol ciktisi   ==> i: 0
+                                i: 0 j: 3
+                                i: 0 j: 2
+                                i: 0 j: 1
+                                i: 1
+                                i: 1 j: 3
+                                i: 1 j: 2
+                                i: 1 j: 1
+                                i: 2
+                                i: 2 j: 3
+                                i: 2 j: 2
+                                i: 2 j: 1
+
+                                Sonsuz For Döngüsü
+
+For Döngüsü ile sonsuz döngü oluşturmak istenirse aşağıdaki gibi bir kod yazmak yeterli olacaktır;
+
+        for( ;1; ) {
+
+        }
+
+
+

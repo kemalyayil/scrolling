@@ -1,0 +1,97 @@
+String
+Temel yapıdan bahsetmemiz gerekirse, Java String nesnesi aslında bir char kümesinin bir araya gelmesinden
+oluşur.
+
+                            char[] chars = {'M','e','r','h','a','b','a'};
+                            String stringDeger = new String(chars);
+                            System.out.println(stringDeger);
+
+                            //Konsol Çıktısı: Merhaba
+Yukarıda ki örnekten de görebileceğiniz gibi kodu koşturduğumuzda konsol ekranına “Merhaba” yazdığını
+göreceksiniz. Elbette kod yazarken Java String veri tipi bu şekilde karakterleri tek tek yazarak elde
+edilmiyor.
+
+                                    Java String substring() ve charAt() methodları
+/Farklı bir String veri tipi tanımlama yöntemi
+String stringDeger = new String("Merhaba mobilhanem.com");
+
+//String değerden bir karakter çekme
+char charDeger = stringDeger.charAt(9); //Konsol Çıktısı: o
+
+//Substring kullanımı
+String substringDeger = stringDeger.substring(8);
+System.out.println(substringDeger);
+//Konsol Çıktısı: mobilhanem.com
+
+//Substring kullanımı
+String subStringDeger1 = stringDeger.substring(8,18);
+System.out.println(substringDeger1);
+//Konsol Çıktısı: mobilhanem
+
+                                    Java String toUpperCase() ve toLowerCase() methodları
+String stringDeger = "Merhaba mobilhanem.com";
+System.out.println(stringDeger.toUpperCase());
+//Konsol Çıktısı: MERHABA MOBİLHANEM.COM
+System.out.println(stringDeger.toLowerCase());
+//Konsol Çıktısı: merhaba mobilhanem.com
+
+                                    Java String replace() methodu
+String stringDeger = "Merhaba mobilhanem.com";
+System.out.println(stringDeger.replace("r", "s"));
+//Konsol Çıktısı: Meshaba mobilhanem.com
+System.out.println(stringDeger.replace("Merhaba", "Hello"));
+//Konsol Çıktısı: Hello mobilhanem.com
+String stringDeger = "Merhaba mobilhanem.com";
+System.out.println(stringDeger.replace("r", "s"));
+//Konsol Çıktısı: Meshaba mobilhanem.com
+System.out.println(stringDeger.replace("Merhaba", "Hello"));
+//Konsol Çıktısı: Hello mobilhanem.com
+
+                                    Java String equals() ve equalsIgnoreCase() methodları
+String stringDeger = "Merhaba mobilhanem.com";
+boolean durum1 = stringDeger.equals("Merhaba mobilhanem.com");
+System.out.println(durum1);
+//Konsol Çıktısı: true
+
+boolean durum2 = stringDeger.equals("merhaba mobilhanem.com");
+System.out.println(durum2);
+//Konsol Çıktısı: false
+
+boolean durum3 = stringDeger.equalsIgnoreCase("merhaba mobilhanem.com"); //Yazı büyük ve ya küçük harf olması önemsiz
+System.out.println(durum3);
+//Konsol Çıktısı: true
+
+                                    Java String [] split methodu
+String stringDeger = "Merhaba mobilhanem.com";
+String[] stringDegerler = stringDeger.split(" "); // kelime kelime alir
+
+System.out.println(stringDegerler[0]);
+//Konsol Çıktısı: Merhaba
+System.out.println(stringDegerler[1]);
+//Konsol Çıktısı: mobilhanem.com
+
+                                    Diger Onemli Metotlar ve aciklamalari
+charAt(int index)	        : String içerisinde belirtilen index değerindeki karakter değeri döner.
+lenght()	                : String değerin uzunluğunu döner.
+substring(int beginIndex)   : Verilen beginIndex değerindeki indexten sonrasını döner.
+substring(int beginIndex, int endIndex)	: Verilen begin index ile endIndex değeri rasındaki bölümü döner.
+equals(Object another)	    : Object olarak verilen değerin varolan değerle eşitliğini kontrol eder.
+                              true|false döner.
+isEmpty()	                : String değer boş mu dolumu kontrolü yapar. true|false döner.
+concat(String str)	        : String değerin sonuna farklı bir string değer eklemek için kullanılır.
+replace(char old, char new)	: String metin içerisinde belirtilen oldChar değerlerini newChar değeri ile
+                              değiştirir.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
