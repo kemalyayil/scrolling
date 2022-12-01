@@ -1,4 +1,7 @@
                             Farklı For Döngüsü Kullanımları
+            for (dongu_baslangic_degeri; dongu_kosulu; dongu_deger_degisimi) {
+             //kosula uygun kod blogu
+            }
 
 For Döngüsü ‘nün bir çok farklı kullanımı olabilir. Örneğin verileri sadece arttırarak yazmamız
 gerekmemektedir, veya döngüyü 0 (sıfır) dan başlatmak zorunda değilizdir. For Döngüsü nün bir kaç
@@ -40,12 +43,32 @@ farklı kullanım örneğini vermek gerekirse;
 
 
                                Nested Loop (İçiçe Döngüler)
+
 //nested loop
         for(int i = 0; i<10; i++) {
             System.out.println("i: " + i);
             for(int j=10; j>0; j--) {
                 System.out.println("i: " + i + " j: " + j);
             }
+        }//Konsol ciktisi   ==> i: 0
+                                i: 0 j: 3
+                                i: 0 j: 2
+                                i: 0 j: 1
+                                i: 1
+                                i: 1 j: 3
+                                i: 1 j: 2
+                                i: 1 j: 1
+                                i: 2
+                                i: 2 j: 3
+                                i: 2 j: 2
+                                i: 2 j: 1
+
+                                Sonsuz For Döngüsü
+
+For Döngüsü ile sonsuz döngü oluşturmak istenirse aşağıdaki gibi bir kod yazmak yeterli olacaktır;
+
+        for( ;1; ) {
+
         }
 
 
