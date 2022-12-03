@@ -1,4 +1,4 @@
-package Java;
+package Java.nestedLoop;
 /*
 15  5   100 2
 30  10  90  4
@@ -22,7 +22,7 @@ public class nested_loop {
                 } else if (j == 2) {
                     System.out.print(i * 5 + " ");
                 } else if (j == 3) {
-                    System.out.print(110 - i * 10 + " ");
+                    System.out.print(110 - (i * 10) + " ");
                 } else {
                     System.out.print(2 * i + " ");
                 }

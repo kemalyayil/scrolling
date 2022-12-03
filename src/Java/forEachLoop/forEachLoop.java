@@ -1,4 +1,4 @@
-package Java;
+package Java.forEachLoop;
 
 import java.util.Arrays;
 
